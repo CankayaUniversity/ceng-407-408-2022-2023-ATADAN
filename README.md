@@ -1,6 +1,6 @@
 # ceng-407-408-2022-2023-ATADAN
 # ATADAN
-Akıllı Tarım İçin Akıllı Danışman
+-Akıllı Tarım İçin Akıllı Danışman-
 
 ## ADVISOR
 Dr. Öğr. Üyesi Gül TOKDEMİR
