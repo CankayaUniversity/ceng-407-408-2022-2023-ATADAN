@@ -1,6 +1,64 @@
 ﻿@page "/home"
+
+@using Microsoft.Maui.Graphics;
+
 <h3>Home</h3>
+<div class="allinside">
+    <div class="container">
+        <div class="top-right">
+            <button class="photobutton" style="width:110px;height:40px;" @onclick="OnTakePhotoClicked">Take Photo</button>
+        </div>
+        <div class="middle-center">
+            <div>
+                @{
+                    if (isClickedTakephot == true) {
+                        <img id="image" width="250" height="250" src=@_photopath />
+                    }
+                    else {
+                        <img width="250" height="250" src="./images/blank.png" />
+                    }
+                }
+            </div>
+        </div>
+        <div class="bottom-center">
+            <button class="photobutton"  style="width:110px;height:40px;" @onclick="AddPhotofromGallery">Open Galery</button>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    
+</div>
 
 @code {
+    private string _photopath;
+    private bool isClickedTakephot = false;
+    public async void OnTakePhotoClicked() {
+        var photo = await MediaPicker.CapturePhotoAsync(new MediaPickerOptions {
+                Title = "Take a photo"
+            });
+        var stream = await photo.OpenReadAsync();
+        var bytes = new byte[stream.Length];
+        await stream.ReadAsync(bytes, 0, (int)stream.Length);
+        var base64String = Convert.ToBase64String(bytes);
+        var imgSrc = "data:image/png;base64," + base64String;
+        _photopath = imgSrc;
+        isClickedTakephot = true;
+        StateHasChanged();
+    }
+
+    public async void AddPhotofromGallery() 
+    {
+        var result = await MediaPicker.PickPhotoAsync();
+        if (result != null) {
+            var stream = await result.OpenReadAsync();
+            var imageSource = ImageSource.FromStream(() => stream);
+
+            // Display the image in an Image control
+            _photopath = imageSource.ToString();
+            isClickedTakephot = true;
+            StateHasChanged();
+        }
+    }
 
 }

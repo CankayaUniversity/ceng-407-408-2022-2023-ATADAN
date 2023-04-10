@@ -1,3 +1,6 @@
+/* /Pages/Home.razor.rz.scp.css */
+body[b-v0yejl13fj] {
+}
 /* /Pages/Login.razor.rz.scp.css */
 .allinside[b-u98dazmwfz] {
     height: 100%;
@@ -67,13 +70,13 @@ input[type="password"][b-u98dazmwfz] {
     line-height: 1.5;
 }
 
-input[type="submit"][b-u98dazmwfz] {
+.loginbutton[b-u98dazmwfz] {
     display: block;
     width: 100%;
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color :#44e36e;
+    background-color: #44e36e;
     color: #fff;
     font-size: 1rem;
     line-height: 1.5;

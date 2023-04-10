@@ -1006,3 +1006,4 @@ C:\Users\dursu\OneDrive\Masaüstü\ATADAN\Atadan\Atadan\obj\Debug\net7.0-android
 C:\Users\dursu\OneDrive\Masaüstü\ATADAN\Atadan\Atadan\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\dursu\OneDrive\Masaüstü\ATADAN\Atadan\Atadan\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\dursu\OneDrive\Masaüstü\ATADAN\Atadan\Atadan\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\dursu\OneDrive\Masaüstü\ATADAN\Atadan\Atadan\obj\Debug\net7.0-android\scopedcss\Pages\Home.razor.rz.scp.css

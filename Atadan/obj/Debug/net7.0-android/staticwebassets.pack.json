@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\blank.png",
+      "PackagePath": "staticwebassets\\images\\blank.png"
+    },
+    {
       "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
