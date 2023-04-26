@@ -1,9 +1,10 @@
 .allinside[b-v0yejl13fj] {
-    margin-top:-35px;
+    margin-top: -35px;
     height: 100%;
     width: 115%;
     margin-left: -25px;
-    background-color: #bcf5cc;
+    background-color:#bcf5cc;
+    background-image:url(../wwwroot/images/plants.png);
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
@@ -14,9 +15,9 @@
     height: 80vh;
 }
 
-.photobutton[b-v0yejl13fj]{
+.photobutton[b-v0yejl13fj] {
     border-radius: 10px;
-    background-color:paleturquoise;
+    background-color: paleturquoise;
 }
 
 .top-right[b-v0yejl13fj] {

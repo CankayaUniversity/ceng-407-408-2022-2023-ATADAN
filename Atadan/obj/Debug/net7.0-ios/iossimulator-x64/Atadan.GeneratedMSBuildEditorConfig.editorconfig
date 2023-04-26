@@ -30,6 +30,13 @@ build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/XamlPages/Maps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Atadan.XamlPages.Maps.xaml
+build_metadata.AdditionalFiles.TargetPath = XamlPages\Maps.xaml
+build_metadata.AdditionalFiles.RelativePath = XamlPages\Maps.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Main.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
@@ -71,6 +78,13 @@ build_metadata.AdditionalFiles.ManifestResourceName =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/ContributeDataLabels.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udHJpYnV0ZURhdGFMYWJlbHMucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-dnseh1l1yc
 
 [C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/Home.razor]
 build_metadata.AdditionalFiles.GenKind = 

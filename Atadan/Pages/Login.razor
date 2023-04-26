@@ -7,7 +7,7 @@
     <div class="container" >
         <form>
             <h1>Welcome!!</h1>
-            <h3>Sing In</h3>
+            <h3>Sign In</h3>
             <i class="fas fa-user-circle" aria-hidden="true" style="font-size:40px; color:green; margin-left:100px;"></i>
             
             <div class="form-group">
@@ -19,7 +19,7 @@
             </div>
 
             <button class="loginbutton" @onclick="LogIn">Submit</button>
-            <a style="justify-content:center; display:flex; align-items:center" href="register">Sing Up</a>
+            <a style="justify-content:center; display:flex; align-items:center" href="register">Sign Up</a>
         </form>
 
     </div>
@@ -28,7 +28,7 @@
 @code{
     public User loginUser = new User();
 
-    private async void LogIn() {
+    private void LogIn() {
         navMng.NavigateTo("/home");
     }
 

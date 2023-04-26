@@ -1,16 +1,27 @@
-﻿@page "/counter"
+﻿@page "/map"
+@using Atadan.XamlPages;
+<div>
+    <h2>Welcome to Find Closest Pesticide Dealer</h2>
+    <p>Please click button to access Google Maps</p>
+    <p style="font-size:22px;background-color:red">This place show us to detected chemical solution for dieases!!</p>
+    <br /><br /><br />
+    <button @onclick="@NavigateMaps">Show Closest Pesticide Dealer</button>
+</div>
 
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    private async void NavigateMaps() 
     {
-        currentCount++;
+        var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+
+        if (status != PermissionStatus.Granted) {
+            // Permission denied
+            return;
+        }
+        else {
+            await App.Current.MainPage.Navigation.PushModalAsync(new Maps());
+        }
+       
     }
 }
