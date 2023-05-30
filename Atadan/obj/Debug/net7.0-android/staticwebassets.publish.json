@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AFv6FAWEDqSdZStZMc/5hIR8DluPoEvLtCNIx6TXaw0=",
+  "Hash": "YTfqmdX8F6AHz6SFJOrDw/t55DbhnFGOZiXLE67225w=",
   "Source": "Atadan",
   "BasePath": "/",
   "Mode": "Root",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\plants.png",
+      "SourceId": "Atadan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/plants.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\plants.png"
     },
     {
       "Identity": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\user.png",

@@ -1,16 +1,17 @@
 ﻿@page "/register"
 
 <div class="allinside">
-    <div class="container" style="background-color:#bcf5cc">
+    <div class="container" style="background-color:#bcf5cc; display:flex; justify-content:center; align-items:center;">
         <form>
+            <img src="./images/logo.png" alt="logo" width="100" height="100" class="imageclass1" style="margin:auto;">
             <h2>Register</h2>
-            <div class="form-group">
+            <div class="form-group" ; text-align:left>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
@@ -19,7 +20,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Register">
             <a style="justify-content:center; display:flex; align-items:center" href="login">Already have an account?</a>
         </form>
     </div>

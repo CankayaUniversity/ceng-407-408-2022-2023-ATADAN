@@ -1,10 +1,59 @@
-/* /Pages/Home.razor.rz.scp.css */
-.allinside[b-v0yejl13fj] {
-    margin-top:-35px;
+/* /Pages/ContributeDataLabels.razor.rz.scp.css */
+.allinside[b-dnseh1l1yc] {
+    margin-top: -35px;
     height: 100%;
     width: 115%;
     margin-left: -25px;
     background-color: #bcf5cc;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container[b-dnseh1l1yc] {
+    position: relative;
+    height: 80vh;
+}
+
+.photobutton[b-dnseh1l1yc] {
+    border-radius: 10px;
+    background-color: paleturquoise;
+}
+
+.top-right[b-dnseh1l1yc] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.middle-center[b-dnseh1l1yc] {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-center[b-dnseh1l1yc] {
+    position: absolute;
+    display : flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* /Pages/Home.razor.rz.scp.css */
+.allinside[b-v0yejl13fj] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color:#bcf5cc;
+    background-image:url(../wwwroot/images/plants.png);
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
@@ -15,9 +64,9 @@
     height: 80vh;
 }
 
-.photobutton[b-v0yejl13fj]{
+.photobutton[b-v0yejl13fj] {
     border-radius: 10px;
-    background-color:paleturquoise;
+    background-color: paleturquoise;
 }
 
 .top-right[b-v0yejl13fj] {
@@ -49,29 +98,33 @@
     overflow-y: hidden;
     height: 100vh;
 }
+
 .container[b-u98dazmwfz] {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 .imageclass1[b-u98dazmwfz] {
-    margin-top:40px;
-    margin-left:35%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin-top: 40px;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .imageclass2[b-u98dazmwfz] {
     margin-left: 100px;
-    color:green;
-    margin-bottom:20px;
+    color: green;
+    margin-bottom: 20px;
 }
+
 form[b-u98dazmwfz] {
-    margin-top:-390px;
+    margin-top: -390px;
     width: 100%;
     padding: 2rem;
     border: 1px solid #ccc;
@@ -83,6 +136,7 @@ h1[b-u98dazmwfz] {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 h3[b-u98dazmwfz] {
     text-align: center;
     margin-bottom: 1rem;
@@ -126,6 +180,22 @@ input[type="password"][b-u98dazmwfz] {
         max-width: 300px;
     }
 }
+/* /Pages/NaturalSolution.razor.rz.scp.css */
+.allinside[b-bsr3vr7bs6] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    background-image: url(../wwwroot/images/plants.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* /Pages/Register.razor.rz.scp.css */
 .allinside[b-7v4xxkdpjk] {
     height: 100%;
@@ -135,11 +205,20 @@ input[type="password"][b-u98dazmwfz] {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
 .container[b-7v4xxkdpjk] {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.imageclass1[b-7v4xxkdpjk] {
+    margin-top: 40px;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form[b-7v4xxkdpjk] {
@@ -182,7 +261,7 @@ input[type="submit"][b-7v4xxkdpjk] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #44e36e;
     color: #fff;
     font-size: 1rem;
     line-height: 1.5;
@@ -193,6 +272,22 @@ input[type="submit"][b-7v4xxkdpjk] {
     form[b-7v4xxkdpjk] {
         max-width: 300px;
     }
+}
+/* /Pages/ShowDisease.razor.rz.scp.css */
+.allinside[b-jlo54orntb] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    background-image: url(../wwwroot/images/plants.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-ztfhjwzwtp] {

@@ -1,0 +1,46 @@
+﻿
+@using Atadan.Data;
+@using Atadan.Services;
+@page "/showdisease"
+@inject NavigationManager navMng;
+
+<h3>ShowDisease</h3>
+<div class="allinside">
+    <div class="middle-center" style="display:flex;align-items:center;justify-content:center">
+        <div style="margin-top:-250px;">
+               <img id="image" width="250" height="250" src=@_photopath />
+        </div>
+    </div>
+    <div>
+        @if (res.diseaseName != null) {
+            <label style="margin-top:40px; margin-left:10px;">Hastalığınız %@res.correctRate olasılıkla @res.diseaseName</label>
+        }
+        <div class="loginbutton">
+            <button @onclick="ShowNaturalDieases">Doğal çözüm yolları</button>
+            <button @onclick="ShowChemicalSolutions">Kimyasal çözüm yolları</button>
+        </div>
+    </div>
+</div>
+@code {
+
+    public AiResultModel res { get; set; }
+    public byte[] image { get; set; }
+    public string _photopath;
+
+    protected override void OnInitialized() {
+        image = AppService.Instance.mainImage;
+        res = AppService.Instance.aiResultModel;
+        var base64String = Convert.ToBase64String(image);
+        _photopath = "data:image/png;base64," + base64String;
+    }
+    public async void ShowNaturalDieases() {
+        var result = await AppService.Instance.SearchOnline(res.diseaseName);
+        AppService.Instance.searchResponse = result;
+        navMng.NavigateTo("/naturalsol");
+    }
+    public async void ShowChemicalSolutions() {
+        var result = await AppService.Instance.SearchOnlineChem(res.diseaseName);
+        AppService.Instance.searchResponse = result;
+        navMng.NavigateTo("/map");
+    }
+}

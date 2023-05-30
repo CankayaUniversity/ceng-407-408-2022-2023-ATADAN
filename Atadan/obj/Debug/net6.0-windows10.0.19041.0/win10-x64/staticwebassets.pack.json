@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Atadan.styles.css",
+      "PackagePath": "staticwebassets\\Atadan.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\blank.png",
+      "PackagePath": "staticwebassets\\images\\blank.png"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\plants.png",
+      "PackagePath": "staticwebassets\\images\\plants.png"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\images\\user.png",
+      "PackagePath": "staticwebassets\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\dursu\\OneDrive\\Masaüstü\\ATADAN\\Atadan\\Atadan\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.Atadan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.Atadan.props",
+      "PackagePath": "build\\Atadan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.Atadan.props",
+      "PackagePath": "buildMultiTargeting\\Atadan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.Atadan.props",
+      "PackagePath": "buildTransitive\\Atadan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

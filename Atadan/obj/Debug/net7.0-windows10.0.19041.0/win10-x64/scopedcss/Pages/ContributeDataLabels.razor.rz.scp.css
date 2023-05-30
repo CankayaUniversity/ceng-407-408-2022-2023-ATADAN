@@ -1,0 +1,47 @@
+.allinside[b-dnseh1l1yc] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container[b-dnseh1l1yc] {
+    position: relative;
+    height: 80vh;
+}
+
+.photobutton[b-dnseh1l1yc] {
+    border-radius: 10px;
+    background-color: paleturquoise;
+}
+
+.top-right[b-dnseh1l1yc] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.middle-center[b-dnseh1l1yc] {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-center[b-dnseh1l1yc] {
+    position: absolute;
+    display : flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+}

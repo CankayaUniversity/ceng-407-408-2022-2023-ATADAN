@@ -1,0 +1,47 @@
+﻿.allinside {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container {
+    position: relative;
+    height: 80vh;
+}
+
+.photobutton {
+    border-radius: 10px;
+    background-color: paleturquoise;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.middle-center {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-center {
+    position: absolute;
+    display : flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+}

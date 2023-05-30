@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atadan.XamlPages.Maps"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:loc="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             Title="Maps">
+    
+    
+    <!--
+        Initial CameraUpdate
+        Location = Turkey
+        Zoom = 6
+        Rotation = 30
+        Tilt = 60
+    --><!--
+    <maps:Map x:Name="myMap" 
+              VerticalOptions="CenterAndExpand"
+              MyLocationEnabled="True"
+              InitialCameraUpdate="42,36,5">
+    </maps:Map>-->
+
+    <Grid>
+        <maps:Map x:Name="mappy" IsShowingUser="True"
+                  IsTrafficEnabled="True" IsZoomEnabled="True" MapType="Hybrid">
+            <x:Arguments>
+                <MapSpan>
+                    <x:Arguments>
+                        <loc:Location>
+                            <x:Arguments>
+                                <x:Double>39.81876203124682</x:Double>
+                                <x:Double>32.56120159697087</x:Double>
+                            </x:Arguments>
+                        </loc:Location>
+                        <x:Double>0.3</x:Double>
+                        <x:Double>0.3</x:Double>
+                    </x:Arguments>
+                </MapSpan>
+            </x:Arguments>
+        </maps:Map>
+    </Grid>
+    
+    
+</ContentPage>

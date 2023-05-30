@@ -1,0 +1,77 @@
+﻿@page "/contributeDataLabel"
+<h3>ContributeDataLabels</h3>
+<div class="allinside">
+    <div class="container">
+        <div class="top-right">
+            <button class="photobutton" style="width:110px;height:40px;" @onclick="OnTakePhotoClicked">Take Photo</button>
+        </div>
+        <div class="middle-center" style="margin-top:40px;">
+            <div>
+                @{
+                    if (isClickedTakephot == true) {
+                        <img id="image" width="250" height="250" src=@_photopath />
+                    }
+                    else {
+                        <img width="250" height="250" src="./images/blank.png" />
+                    }
+                }
+            </div>
+            <div style="margin:20px;padding:5px;">
+                <input list="Plants" name="browser" style="border-radius:20px;" id="browser" placeholder="Plant Type:">
+                <datalist id="Plants">
+                    <option value="Apple"> </option>
+                    <option value="Grapes"></option>
+                    <option value="Tomato"></option>
+                    <option value="Blueberry"></option>
+                </datalist>
+                <input list="Diseases" name="browser" style="border-radius:20px;margin-top:15px;" id="browser" placeholder="Diseases Type:">
+                <datalist id="Diseases">
+                    <option value="Black Spot."> </option>
+                    <option value="Powdery Mildew"></option>
+                    <option value="Downy Mildew"></option>
+                    <option value="Blight."></option>
+                </datalist>
+            </div>
+        </div>
+        <div class="bottom-center" style="padding:12px;">
+            <button class="photobutton" style="width:110px;height:40px;" @onclick="AddPhotofromGallery">Open Galery</button>
+
+            <button class="photobutton" style="width:220px;height:40px;margin-top:12px;" @onclick="@onNextClick">Contribute AI Model</button>
+
+        </div>
+
+    </div>
+</div>
+@code {
+    private string _photopath;
+    private bool isClickedTakephot = false;
+    public async void OnTakePhotoClicked() {
+        var photo = await MediaPicker.CapturePhotoAsync(new MediaPickerOptions {
+                Title = "Take a photo"
+            });
+        var stream = await photo.OpenReadAsync();
+        var bytes = new byte[stream.Length];
+        await stream.ReadAsync(bytes, 0, (int)stream.Length);
+        var base64String = Convert.ToBase64String(bytes);
+        var imgSrc = "data:image/png;base64," + base64String;
+        _photopath = imgSrc;
+        isClickedTakephot = true;
+        StateHasChanged();
+    }
+
+    public async void AddPhotofromGallery() {
+        var result = await MediaPicker.PickPhotoAsync();
+        if (result != null) {
+            var stream = await result.OpenReadAsync();
+            var imageSource = ImageSource.FromStream(() => stream);
+
+            // Display the image in an Image control
+            _photopath = imageSource.ToString();
+            isClickedTakephot = true;
+            StateHasChanged();
+        }
+    }
+    public void onNextClick() {
+        
+    }
+}

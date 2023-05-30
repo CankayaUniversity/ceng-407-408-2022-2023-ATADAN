@@ -1,0 +1,48 @@
+﻿@page "/map"
+@using Atadan.Data;
+@using Atadan.Services;
+@using Atadan.XamlPages;
+<div>
+    <h2>Welcome to Find Closest Pesticide Dealer</h2>
+    <div>
+        <div style="width:100%;display:block;overflow-x:hidden;height:60%;">
+            @foreach (var item in searchResult.Items) {
+                <div style="border:solid;border-color:red;border-radius:15px;">
+                    <label style="color:brown">Başlık:</label> @item.Title<br />
+                    @* <label>Link: @searchResult.Items[i].Link</label><br />*@
+                    <label style="color:brown">Özet ve Kaynakça:</label> @item.Snippet<br />
+                    <button @onclick="(() => OpenApiUrlButton(item.Link))">Beni bu linke götür</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <p>En yakın ilaç satıcılarını görmek için lütfen tıklayınız</p>
+    <button @onclick="@NavigateMaps">Haritalar</button>
+</div>
+
+
+@code {
+    SearchResponse searchResult = new SearchResponse();
+
+    protected override void OnInitialized() {
+        searchResult = AppService.Instance.searchResponse;
+    }
+    public void OpenApiUrlButton(string link) { // Replace with your actual API URL
+        AppService.Instance.OpenApiUrlButton(link);
+    }
+
+    private async void NavigateMaps() 
+    {
+        var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+
+        if (status != PermissionStatus.Granted) {
+            // Permission denied
+            return;
+        }
+        else {
+            await App.Current.MainPage.Navigation.PushModalAsync(new Maps());
+        }
+       
+    }
+}

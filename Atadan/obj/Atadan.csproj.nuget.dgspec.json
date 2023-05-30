@@ -90,10 +90,46 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.14.1, )"
+            },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Onion.Maui.GoogleMaps": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "TensorFlow.NET": {
+              "target": "Package",
+              "version": "[0.100.5, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -149,6 +185,10 @@
               "target": "Package",
               "version": "[1.7.0.1, )",
               "autoReferenced": true
+            },
+            "Xamarin.TensorFlow.Lite": {
+              "target": "Package",
+              "version": "[2.12.0, )"
             }
           },
           "imports": [
@@ -213,10 +253,46 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.14.1, )"
+            },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Onion.Maui.GoogleMaps": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "TensorFlow.NET": {
+              "target": "Package",
+              "version": "[0.100.5, )"
             }
           },
           "imports": [
@@ -281,10 +357,46 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.14.1, )"
+            },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Onion.Maui.GoogleMaps": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "TensorFlow.NET": {
+              "target": "Package",
+              "version": "[0.100.5, )"
             }
           },
           "imports": [
@@ -350,6 +462,18 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.14.1, )"
+            },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -359,6 +483,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Maps": {
+              "target": "Package",
+              "version": "[7.0.81, )"
             },
             "Microsoft.Windows.SDK.BuildTools": {
               "suppressParent": "All",
@@ -370,6 +498,26 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Onion.Maui.GoogleMaps": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "TensorFlow.NET": {
+              "target": "Package",
+              "version": "[0.100.5, )"
             }
           },
           "imports": [

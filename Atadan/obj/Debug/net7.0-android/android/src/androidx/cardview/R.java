@@ -8,18 +8,18 @@ package androidx.cardview;
 
 public final class R {
 	public static final class attr {
-		public static final int cardBackgroundColor = 0x7f03008d;
-		public static final int cardCornerRadius = 0x7f03008e;
-		public static final int cardElevation = 0x7f03008f;
-		public static final int cardMaxElevation = 0x7f030091;
-		public static final int cardPreventCornerOverlap = 0x7f030092;
-		public static final int cardUseCompatPadding = 0x7f030093;
-		public static final int cardViewStyle = 0x7f030094;
-		public static final int contentPadding = 0x7f03011f;
-		public static final int contentPaddingBottom = 0x7f030120;
-		public static final int contentPaddingLeft = 0x7f030122;
-		public static final int contentPaddingRight = 0x7f030123;
-		public static final int contentPaddingTop = 0x7f030125;
+		public static final int cardBackgroundColor = 0x7f030096;
+		public static final int cardCornerRadius = 0x7f030097;
+		public static final int cardElevation = 0x7f030098;
+		public static final int cardMaxElevation = 0x7f03009a;
+		public static final int cardPreventCornerOverlap = 0x7f03009b;
+		public static final int cardUseCompatPadding = 0x7f03009c;
+		public static final int cardViewStyle = 0x7f03009d;
+		public static final int contentPadding = 0x7f03012a;
+		public static final int contentPaddingBottom = 0x7f03012b;
+		public static final int contentPaddingLeft = 0x7f03012d;
+		public static final int contentPaddingRight = 0x7f03012e;
+		public static final int contentPaddingTop = 0x7f030130;
 	}
 	public static final class color {
 		public static final int cardview_dark_background = 0x7f05002d;
@@ -39,7 +39,7 @@ public final class R {
 		public static final int CardView_Light = 0x7f100113;
 	}
 	public static final class styleable {
-		public static final int[] CardView = new int[] { 0x0101013f, 0x01010140, 0x7f03008d, 0x7f03008e, 0x7f03008f, 0x7f030091, 0x7f030092, 0x7f030093, 0x7f03011f, 0x7f030120, 0x7f030122, 0x7f030123, 0x7f030125 };
+		public static final int[] CardView = new int[] { 0x0101013f, 0x01010140, 0x7f030096, 0x7f030097, 0x7f030098, 0x7f03009a, 0x7f03009b, 0x7f03009c, 0x7f03012a, 0x7f03012b, 0x7f03012d, 0x7f03012e, 0x7f030130 };
 		public static final int CardView_android_minHeight = 1;
 		public static final int CardView_android_minWidth = 0;
 		public static final int CardView_cardBackgroundColor = 2;

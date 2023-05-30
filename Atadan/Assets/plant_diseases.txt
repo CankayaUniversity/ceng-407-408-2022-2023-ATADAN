@@ -1,0 +1,16 @@
+PlantVillage
+Biber Bakteri Lekelesi
+Sağlıklı Biber
+Patates Erken Yanıklığı
+Patates Geç Yanıklığı
+Sağlıklı Patates
+Domates Bakteri lekesi
+Domates Erken Yanıklığı
+Domates Geç Yanıklığı
+Domates Yaprak Küfü
+Domates Septoria Yaprak Lekesi
+Domates İki Benekli Örümcek Akarı 
+Domates Hedef Nokta 
+Domates Sarı Yaprak Kıvrılma Virüsü
+Domates Mozaik Virüsü
+Sağlıklı Domates

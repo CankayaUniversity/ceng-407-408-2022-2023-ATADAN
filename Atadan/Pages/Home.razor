@@ -1,4 +1,15 @@
-﻿@page "/home"
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Linq;
+@using System.Text;
+@using System.Threading.Tasks;
+@using Atadan.Data;
+@using Atadan.Services;
+@using Microsoft.ML;
+@using Tensorflow;
+@using Tensorflow.Sessions;
+@inject NavigationManager navMng;
+@page "/home"
 
 @using Microsoft.Maui.Graphics;
 
@@ -6,7 +17,7 @@
 <div class="allinside">
     <div class="container">
         <div class="top-right">
-            <button class="photobutton" style="width:110px;height:40px;" @onclick="OnTakePhotoClicked">Take Photo</button>
+            <button class="photobutton" style="width:110px;height:40px;" @onclick="OnTakePhotoClicked">Fotoğraf Çek</button>
         </div>
         <div class="middle-center">
             <div>
@@ -20,26 +31,29 @@
                 }
             </div>
         </div>
-        <div class="bottom-center">
-            <button class="photobutton"  style="width:110px;height:40px;" @onclick="AddPhotofromGallery">Open Galery</button>
+        <div class="bottom-center" style="padding-bottom:80px;">
+            <button class="photobutton" style="width:110px;height:40px;" @onclick="AddPhotofromGallery">Galeriyi aç</button>
         </div>
+        <div class="bottom-center">
+            <button class="photobutton" style="width:120px;height:50px;margin-top:20px;" @onclick="LoadAiModel">Hastalığı tahmin et</button>
+        </div>
+
     </div>
-    <div>
-        
-    </div>
-    
 </div>
 
 @code {
     private string _photopath;
+    private byte[] image;
+    public string ans;
     private bool isClickedTakephot = false;
     public async void OnTakePhotoClicked() {
         var photo = await MediaPicker.CapturePhotoAsync(new MediaPickerOptions {
-                Title = "Take a photo"
+                Title = "Fotoğraf Çek"
             });
         var stream = await photo.OpenReadAsync();
         var bytes = new byte[stream.Length];
         await stream.ReadAsync(bytes, 0, (int)stream.Length);
+        image = bytes;
         var base64String = Convert.ToBase64String(bytes);
         var imgSrc = "data:image/png;base64," + base64String;
         _photopath = imgSrc;
@@ -54,11 +68,32 @@
             var stream = await result.OpenReadAsync();
             var imageSource = ImageSource.FromStream(() => stream);
 
+            image = System.IO.File.ReadAllBytes(result.FullPath);
+            var base64String = Convert.ToBase64String(image);
+            _photopath = "data:image/png;base64," + base64String;
+
             // Display the image in an Image control
-            _photopath = imageSource.ToString();
+            //_photopath = imageSource.ToString();
             isClickedTakephot = true;
             StateHasChanged();
         }
+    }
+    AiModel2.AIModel2 _classifier;
+    AiResultModel aiResultModel = new AiResultModel();
+    private async void LoadAiModel() {
+        try {
+            _classifier = new AiModel2.AIModel2(image);
+
+            var sampleImage = await _classifier.GetSampleImageAsync();
+            var res = await _classifier.GetClassificationAsync(sampleImage);
+            AppService.Instance.aiResultModel = res;
+            AppService.Instance.mainImage = image;
+            navMng.NavigateTo("showdisease");
+        }
+        catch(Exception ex) {
+            
+        }
+
     }
 
 }
