@@ -1,3 +1,4 @@
+using Microsoft.Maui.Devices.Sensors;
 using Microsoft.Maui.Maps;
 using Map = Microsoft.Maui.Controls.Maps.Map;
 namespace Atadan.XamlPages;

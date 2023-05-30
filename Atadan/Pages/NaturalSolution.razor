@@ -1,0 +1,29 @@
+﻿@page "/naturalsol"
+@using Atadan.Data;
+@using Atadan.Services;
+@using System.Globalization;
+
+<h3>Doğal Çözümler</h3>
+<div>
+    <div style="width:100%;display:block;overflow-x:hidden">
+        @foreach(var item in searchResult.Items) {
+            <div style="border:solid;border-color:red;border-radius:15px;">
+                <label style="color:brown">Başlık:</label> @item.Title<br />
+                @* <label>Link: @searchResult.Items[i].Link</label><br />*@
+                <label style="color:brown">Özet ve Kaynakça:</label> @item.Snippet<br />
+                <button @onclick="(() => OpenApiUrlButton(item.Link))">Beni bu linke götür</button>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    SearchResponse searchResult = new SearchResponse();
+
+    protected override void OnInitialized() {
+        searchResult = AppService.Instance.searchResponse;
+    }
+    public void OpenApiUrlButton(string link) { // Replace with your actual API URL
+        AppService.Instance.OpenApiUrlButton(link);
+    }
+}

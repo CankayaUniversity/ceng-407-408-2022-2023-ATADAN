@@ -12,12 +12,12 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-//#if IOS
-//			.UseGoogleMaps("AIzaSyAwN9ng602TIQ9hPfXrkbRYs9ZB_UukY-g")
-//#elif ANDROID
-//			.UseGoogleMaps()
-//#endif
-			.UseMauiMaps()
+            //#if IOS
+            //			.UseGoogleMaps("")
+            //#elif ANDROID
+            //			.UseGoogleMaps()
+            //#endif
+            .UseMauiMaps()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

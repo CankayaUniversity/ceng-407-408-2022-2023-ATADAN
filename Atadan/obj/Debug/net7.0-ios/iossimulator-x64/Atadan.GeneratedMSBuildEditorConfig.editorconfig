@@ -44,10 +44,10 @@ build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/Counter.razor]
+[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/ChemicalSolution.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlbWljYWxTb2x1dGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -100,12 +100,26 @@ build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-u98dazmwfz
 
+[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/NaturalSolution.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmF0dXJhbFNvbHV0aW9uLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-bsr3vr7bs6
+
 [C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/Register.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-7v4xxkdpjk
+
+[C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Pages/ShowDisease.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd0Rpc2Vhc2UucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-jlo54orntb
 
 [C:/Users/dursu/OneDrive/Masaüstü/ATADAN/Atadan/Atadan/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 

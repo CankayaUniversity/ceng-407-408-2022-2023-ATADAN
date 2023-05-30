@@ -9,6 +9,9 @@ Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Microsoft.Maui.Maps.dll
+Microsoft.ML.OnnxRuntime.dll
+org.tensorflow.tensorflow-lite-api.dll
+SkiaSharp.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -94,6 +97,7 @@ Xamarin.Kotlin.StdLib.Jdk7.dll
 Xamarin.Kotlin.StdLib.Jdk8.dll
 Xamarin.KotlinX.Coroutines.Android.dll
 Xamarin.KotlinX.Coroutines.Core.Jvm.dll
+Xamarin.TensorFlow.Lite.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
@@ -156,6 +160,7 @@ androidx.exifinterface.exifinterface.aar
 androidx.browser.browser.aar
 gifdecoder.aar
 glide.aar
+onnxruntime.aar
 GoogleGson.aar
 Microsoft.AspNetCore.Components.WebView.Maui.aar
 Microsoft.Maui.Controls.aar
@@ -165,11 +170,13 @@ maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Microsoft.Maui.Maps.aar
+tensorflow-lite-api.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 play-services-base.aar
 play-services-basement.aar
 play-services-maps.aar
 play-services-tasks.aar
+tensorflow-lite.aar
 playservicesbasement-18.1.0.aar
 playservicestasks-18.0.2.aar
 playservicesbase-18.1.0.aar

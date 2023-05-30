@@ -4807,3 +4807,27 @@ kotlinx.coroutines.flow.StateFlow;kotlinx.coroutines.flow.StateFlow
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ChannelIterator
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator;kotlinx.coroutines.channels.ChannelIterator
 kotlinx.coroutines.channels.ChannelIterator;kotlinx.coroutines.channels.ChannelIterator
+Xamarin.TensorFlow.Lite.IDelegate, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.Delegate
+Xamarin.TensorFlow.Lite.IDelegate;org.tensorflow.lite.Delegate
+org.tensorflow.lite.Delegate;org.tensorflow.lite.Delegate
+Xamarin.TensorFlow.Lite.IDelegateFactory, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.DelegateFactory
+Xamarin.TensorFlow.Lite.IDelegateFactory;org.tensorflow.lite.DelegateFactory
+org.tensorflow.lite.DelegateFactory;org.tensorflow.lite.DelegateFactory
+Xamarin.TensorFlow.Lite.IInterpreterApi, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.InterpreterApi
+Xamarin.TensorFlow.Lite.IInterpreterApi;org.tensorflow.lite.InterpreterApi
+org.tensorflow.lite.InterpreterApi;org.tensorflow.lite.InterpreterApi
+Xamarin.TensorFlow.Lite.IInterpreterFactoryApi, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.InterpreterFactoryApi
+Xamarin.TensorFlow.Lite.IInterpreterFactoryApi;org.tensorflow.lite.InterpreterFactoryApi
+org.tensorflow.lite.InterpreterFactoryApi;org.tensorflow.lite.InterpreterFactoryApi
+Xamarin.TensorFlow.Lite.ITensor, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.Tensor
+Xamarin.TensorFlow.Lite.ITensor;org.tensorflow.lite.Tensor
+org.tensorflow.lite.Tensor;org.tensorflow.lite.Tensor
+Xamarin.TensorFlow.Lite.Nnapi.NnApiDelegate+IPrivateInterface, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.nnapi.NnApiDelegate$PrivateInterface
+Xamarin.TensorFlow.Lite.Nnapi.NnApiDelegate.IPrivateInterface;org.tensorflow.lite.nnapi.NnApiDelegate$PrivateInterface
+org.tensorflow.lite.nnapi.NnApiDelegate$PrivateInterface;org.tensorflow.lite.nnapi.NnApiDelegate$PrivateInterface
+Xamarin.TensorFlow.Lite.Annotations.IUsedByReflection, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.annotations.UsedByReflection
+Xamarin.TensorFlow.Lite.Annotations.IUsedByReflection;org.tensorflow.lite.annotations.UsedByReflection
+org.tensorflow.lite.annotations.UsedByReflection;org.tensorflow.lite.annotations.UsedByReflection
+Xamarin.TensorFlow.Lite.Acceleration.IValidatedAccelerationConfig, org.tensorflow.tensorflow-lite-api;org.tensorflow.lite.acceleration.ValidatedAccelerationConfig
+Xamarin.TensorFlow.Lite.Acceleration.IValidatedAccelerationConfig;org.tensorflow.lite.acceleration.ValidatedAccelerationConfig
+org.tensorflow.lite.acceleration.ValidatedAccelerationConfig;org.tensorflow.lite.acceleration.ValidatedAccelerationConfig

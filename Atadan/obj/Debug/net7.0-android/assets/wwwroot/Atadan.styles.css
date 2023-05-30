@@ -8,6 +8,9 @@
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .container[b-dnseh1l1yc] {
@@ -35,7 +38,11 @@
 
 .bottom-center[b-dnseh1l1yc] {
     position: absolute;
-    bottom: 10vh;
+    display : flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    bottom: 8vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -45,7 +52,8 @@
     height: 100%;
     width: 115%;
     margin-left: -25px;
-    background-image: url("plants.png");
+    background-color:#bcf5cc;
+    background-image:url(../wwwroot/images/plants.png);
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
@@ -172,6 +180,22 @@ input[type="password"][b-u98dazmwfz] {
         max-width: 300px;
     }
 }
+/* /Pages/NaturalSolution.razor.rz.scp.css */
+.allinside[b-bsr3vr7bs6] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    background-image: url(../wwwroot/images/plants.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* /Pages/Register.razor.rz.scp.css */
 .allinside[b-7v4xxkdpjk] {
     height: 100%;
@@ -248,6 +272,22 @@ input[type="submit"][b-7v4xxkdpjk] {
     form[b-7v4xxkdpjk] {
         max-width: 300px;
     }
+}
+/* /Pages/ShowDisease.razor.rz.scp.css */
+.allinside[b-jlo54orntb] {
+    margin-top: -35px;
+    height: 100%;
+    width: 115%;
+    margin-left: -25px;
+    background-color: #bcf5cc;
+    background-image: url(../wwwroot/images/plants.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-ztfhjwzwtp] {

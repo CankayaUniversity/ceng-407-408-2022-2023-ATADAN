@@ -15,7 +15,7 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true" android:requestLegacyExternalStorage="true" android:name="crc640f9fb4260a1f6199.MainApplication" android:label="Atadan" android:debuggable="true" android:extractNativeLibs="true">
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAwN9ng602TIQ9hPfXrkbRYs9ZB_UukY-g" />
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBerokGUaHf-Nl0r9S4-Ux5vkqmYuI_l20" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/Maui.SplashTheme" android:name="crc640f9fb4260a1f6199.MainActivity" android:exported="true">
       <intent-filter>
