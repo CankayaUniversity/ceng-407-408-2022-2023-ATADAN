@@ -1,0 +1,50 @@
+﻿@using EntityLayer.Concrete
+@model List<Admin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <br>
+
+    <div class="w3-container">
+        <h2>Yönetici Listesi</h2>
+    </div>
+    <br />
+    <div class="w3-row-padding">
+
+        @foreach (var item in Model)
+        {
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">@item.AdminRole</li>
+                    <li class="w3-padding-16"><b>İsim:</b> @item.AdminName</li>
+                    <li class="w3-padding-16"><b>Soyisim:</b> @item.AdminSurname</li>
+                    <li class="w3-padding-16"><b>Email:</b> @item.AdminEmail</li>
+                    <li class="w3-padding-16"><b>Şifre:</b> @item.AdminPasswordHash</li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <a style="margin-left:5px; margin-bottom:5px" href="/Admin/AdminUpdate/@item.AdminID" class="btn btn-sm btn-light">
+                            <i class="fa fa-edit"></i> Düzenle
+                        </a>
+                        <a style="margin-left:5px; margin-bottom:5px" href="/Admin/AdminDelete/@item.AdminID" class="btn btn-sm btn-light">
+                            <i class="fa fa-trash"></i> Kaydı Sil
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+</body>
+</html>
+

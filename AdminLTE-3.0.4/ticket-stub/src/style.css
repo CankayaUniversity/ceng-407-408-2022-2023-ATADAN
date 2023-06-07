@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic|Megrim);
+		*{
+			box-sizing: border-box;
+		}
+		body {
+			background: #eee;
+			font-family: "Josefin Sans";
+		}
+		.event{
+			border-radius: 4px;
+			width: 400px;
+			height: 150px;
+      margin: 40px auto 0;
+		}
+		.event-side{
+			padding: 10px;
+			border-radius: 4px;
+			float: left;
+			height: 100%;
+			width: calc(15% - 1px);
+			box-shadow: 1px 2px 2px -1px #888;
+			background: white;
+			z-index: 1000;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			position: relative;
+			overflow: hidden;
+			font-size: 0.8em;
+			text-align: right;
+		}
+		.event-date, .event-time{
+			position: absolute;
+			width: calc(100% - 20px);
+		}
+		.event-date {
+			top: 10px;
+			font-size: 1.2em;
+		}
+		.event-time{
+			bottom: 10px;
+		}
+		.to {
+			display: block;
+			position: relative;
+			left: -25%;
+		}
+		.cut-out {
+			border-radius: 1000px;
+			width: 100%;
+			height: 40%;
+			display: block;
+			position: absolute;
+			left: -60%;
+			top: 25%;
+			background: #eee;
+			box-shadow: inset -1px 2px 2px -1px #888
+		}
+		.dotted-line-separator {
+			right: -2px;
+			position: absolute;
+			background: #fff;
+			width: 5px;
+			top: 8px;
+			bottom: 8px;
+		}
+		.dotted-line-separator .line {
+			/*border-right: 1px dashed #ccc;*/
+			transform:rotate(90deg);
+		}
+		.dotted-line-separator .line:after {
+			content: "| | | | | | | | | | | | | | | | | | | | | | | | | | |";
+			overflow: hidden;
+			display: block;
+			position: relative;
+			left: 1px;
+			height: 90%;
+			margin: 5px 0;
+			display: block;
+			color: rgba(204, 204, 204, 0.5);
+		}
+		.event-body {
+			border-radius: 4px;
+			float: left;
+			height: 100%;
+			width: 85%;
+			box-shadow: 0 2px 2px -1px #888;
+			background: white;
+			padding-right: 10px;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px; 
+		}
+		.event-title, .event-location, .event-details{
+			float: left;
+			width: 54%;
+			padding: 10px;
+		}
+		.event-title, .event-location {
+			border-bottom: 1px solid #ccc;
+		}
+		.event-location, .event-details {
+			height: 30%;
+			line-height: 24px;
+		}
+		.event-title {
+			height: 40%;
+		}
+		.event-title span{
+			font-size: 0.5em;
+			text-transform: uppercase;
+			color: #888;
+		}
+		.event-title h3 {
+			margin: 0;
+		}
+		.event-image{
+			width: calc(46% - 20px);
+			height: calc(100% - 20px);
+			margin: 10px;
+			float: left;
+			overflow: hidden;
+      text-align: center;
+		}
+		.image {
+			display: block;
+			height: 100%;
+      widht: 100%;
+      background: url('http://thumbs.dreamstime.com/x/dj-turns-records-club-under-blue-light-31682560.jpg') no-repeat center;
+      background-size: cover;
+		}

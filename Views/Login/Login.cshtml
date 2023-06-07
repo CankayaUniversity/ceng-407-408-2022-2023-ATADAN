@@ -1,0 +1,108 @@
+﻿
+
+@{
+    Layout = null;
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Content/package/dist/sweetalert2.all.js"></script>
+<link href="~/Content/package/dist/sweetalert2.min.css" rel="stylesheet" />
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('/W3/monochrome-sky-branch-tree-plant-background-608825-wallhere.com.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        button {
+            color: #f3f4f7;
+            background-color: #026929;
+            font-size: 18px;
+            border-color: #026929;
+            border-radius: 16px;
+            padding: 5px 10px;
+            letter-spacing: 3px;
+            cursor: pointer
+        }
+
+            button:hover {
+                color: #026929;
+                background-color: #ffffff;
+            }
+    </style>
+    <title>Yönetici Giriş</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/login-form-20/css/style.css">
+
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <img src="~/W3/logo1.png" style="width:100%; height:190px">
+                    <h1 style="color: #026929; font-family: Brush Script MT">ATADAN YÖNETİCİ PORTALI</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-0" style="padding:10px">
+
+
+                        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                        {
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="AdminEmail" placeholder="Kullanıcı Adı" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="password-field" type="password" class="form-control" name="AdminPasswordHash" placeholder="Şifre" required>
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="myButton">Giriş Yap</button>
+                            </div>
+                        }
+
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @if (TempData["hata"] != null)
+    {
+        <script>
+        swal.fire({
+                icon: 'error',
+                title: 'Oturum Açılamadı',
+            text: '@TempData["hata"]',
+            confirmButton: 'btn btn-success',
+            confirmButtonText: 'Tamam',
+            });
+        </script>
+    }
+
+
+    <script src="~/AdminLTE-3.0.4/login-form-20/jquery.min.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/popper.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/bootstrap.min.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

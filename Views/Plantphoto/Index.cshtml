@@ -1,0 +1,157 @@
+﻿@using EntityLayer.Concrete
+@model List<Plantphoto>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #2196F3;
+                    color: white;
+                }
+
+            .topnav input[type=text] {
+                float: right;
+                padding: 6px;
+                margin-top: 8px;
+                margin-right: 16px;
+                border: none;
+                font-size: 17px;
+            }
+
+
+        body {
+            background: #f2f2f2;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .search {
+            width: 180%;
+            height: 40%;
+            position: relative;
+            display: flex;
+        }
+
+        .searchTerm {
+            width: 100%;
+            border: 3px solid #00B4CC;
+            border-right: none;
+            padding: 5px;
+            height: 35px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #026929;
+        }
+
+            .searchTerm:focus {
+                color: #026929;
+            }
+
+        .searchButton {
+            width: 40px;
+            height: 36px;
+            border: 1px solid #026929;
+            background: #026929;
+            position: absolute;
+            top: 19%;
+            left: 22%;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /*Resize the wrap to see the search bar change!*/
+        .wrap {
+            width: 30%;
+            position: absolute;
+            top: 13%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a style="font-family: Brush Script MT; font-size:24px">Kullanıcılar Tarafından Yüklenen Fotoğraflar</a>
+        <div class="wrap">
+            @using (Html.BeginForm("Index", "Plantphoto", FormMethod.Post))
+            {
+                <div class="search">
+                    <input style="margin-right:2%;" type="text" placeholder="Hastalık Ara" name="p">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+        @foreach (var item in Model.OrderByDescending(x => x.PlantphotoDate))
+        {
+            <div class="w3-third" style="margin-bottom:20px">
+                <div class="w3-card">
+                    <a target="_blank" href="@Url.Action("GetImage", "Plantphoto", new { id = item.PlantphotoID })">
+                        <img src="@Url.Action("GetImage", "Plantphoto", new { id = item.PlantphotoID })" style="width:100%; height:190px">
+                    </a>
+                    <div class="w3-container">
+                        <h4><h8 style="color: #026929;font-family:'Bernard MT'">Bitki Türü:</h8>  @item.PlantphotoType</h4>
+                        <h4><h8 style="color: #026929; font-family: 'Bernard MT'">Hastalık Adı:</h8> @item.DiseaseName</h4>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <a style="margin-left:5px; margin-bottom:5px" href="/Plantphoto/Download/@item.PlantphotoID" class="btn btn-sm btn-light">
+                            <i class="fa fa-download"></i> İndir
+                        </a>
+                        <a style="margin-left:5px; margin-bottom:5px" href="/Plantphoto/PhotoDelete/@item.PlantphotoID" class="btn btn-sm btn-light">
+                            <i class="fa fa-trash"></i> Kaydı Sil
+                        </a>
+                        <h8 style="font-size:12px; opacity:0.4; margin-left:150px"> @(((DateTime)item.PlantphotoDate).ToString("dd-MM-yyyy"))</h8>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+</body>
+</html>
+
+

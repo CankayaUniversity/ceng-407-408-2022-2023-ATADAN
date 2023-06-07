@@ -1,0 +1,126 @@
+﻿@model EntityLayer.Concrete.Admin
+@{
+    ViewBag.Title = "AdminUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Content/package/dist/sweetalert2.all.js"></script>
+<link href="~/Content/package/dist/sweetalert2.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            .registerbtn:hover {
+                opacity: 1;
+            }
+
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    @using (Html.BeginForm("AdminUpdate", "Admin", FormMethod.Post))
+    {
+        <br /><br /><br /><br />
+        <div class="container">
+            <h1>Yönetici Bilgilerini Güncelle</h1>
+            <p>Lütfen yönetici bilgilerini doldurun.</p>
+            <hr><br /><br /><br /><br />
+            <input style="margin-right:2%;" type="text" value="@Model.AdminID" name="AdminID" hidden>
+
+            <input style="margin-right:2%;" type="text" value="@Model.AdminName" name="AdminName" required>
+
+            <input style="margin-right:2%;" type="text" value="@Model.AdminSurname" name="AdminSurname" required>
+
+            <input style="margin-right:2%;" type="text" value="@Model.AdminEmail" name="AdminEmail" required>
+
+            <input type="text" value="@Model.AdminPasswordHash" name="AdminPasswordHash" required>
+            <label for="roles">Yetki:</label>
+            <select id="roles" name="AdminRole">
+                <option value="Yönetici">Yönetici</option>
+                <option value="Yetkili">Yetkili</option>
+            </select>
+            <hr><br /><br /><br /><br />
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Güncelle</button>
+        </div>
+        <br /><br /><br /><br />
+
+    }
+    @*@if (TempData["addadmin"] != null)
+        {
+            <script>
+            swal.fire({
+                icon: 'success',
+                title: 'Yönetici Kaydedildi',
+                text: '@TempData["addadmin"]',
+                confirmButton: 'btn btn-success',
+                confirmButtonText: 'Tamam',
+                });
+            </script>
+        }*@
+
+</body>
+</html>
+
+

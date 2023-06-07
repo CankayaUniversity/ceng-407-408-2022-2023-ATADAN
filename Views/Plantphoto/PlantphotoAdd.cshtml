@@ -1,0 +1,18 @@
+﻿@model EntityLayer.Concrete.Plantphoto
+@{
+    ViewBag.Title = "PlantphotoAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PlantphotoAdd</h2>
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h2>AddDriver</h2>
+
+@using (Html.BeginForm("PlantphotoAdd", "Plantphoto", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="imageFile" />
+    <button class="submit-btn">
+        Gönder
+    </button>
+}

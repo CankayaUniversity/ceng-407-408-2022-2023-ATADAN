@@ -1,0 +1,118 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATADAN</title>
+    <link rel="icon" href="https://static.wixstatic.com/media/486c46_60a367ae0d1e437bacedb7fb0360a66b~mv2.png/v1/fill/w_463,h_251,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/486c46_60a367ae0d1e437bacedb7fb0360a66b~mv2.png" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidebar a {
+                padding: 28px 8px 18px 32px;
+                text-decoration: none;
+                font-size: 23px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidebar a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidebar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 100px;
+            }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+            .openbtn:hover {
+                background-color: #444;
+            }
+
+        #main {
+            padding: 6px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            @Html.ActionLink("ATADAN Yönetici Portalı", "Index", "Plantphoto", new { area = "" }, new { @class = "navbar-brand" })
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="https://www.atadan.net/"><i class="fa fa-book w3-margin-right"></i>Hakkında</a>
+                <a href="/Plantphoto/Index/"><i class="fa fa-photo w3-margin-right"></i>Fotoğraflar</a>
+                @if (User.IsInRole("Yetkili"))
+                {
+                <a href="/Admin/Index/"><i class="fa fa-user w3-margin-right"></i>Yönetici Listesi</a>
+                <a href="/Admin/AdminAdd/"><i class="fa fa-user w3-margin-right"></i>Yönetici Ekle</a>
+                }
+                <a href="/Login/LogOut/"><i class="fa fa-sign-out w3-margin-right"></i>Çıkış Yap</a>
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ </button>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Akıllı Tarım Akıllı Danışman</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+</script>
